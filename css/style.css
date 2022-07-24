@@ -160,7 +160,7 @@
         height: 877px;
     }
     
-    aside h2 {
+    .name {
         text-align: center;
         padding-bottom: 60px;
         font-family: 'Georgia';
@@ -315,4 +315,53 @@
         font-size: 20px;
         line-height: 115%;
         color: #545454;
+    }
+    
+    .donation-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .donation-wrapper__labrador {
+        width: 56%;
+        text-align: right;
+    }
+    
+    .donation-wrapper__card {
+        width: 43%;
+    }
+    
+    .donation-wrapper__card h2 {
+        margin: 0;
+        padding-bottom: 20px;
+        width: 285px;
+        text-align: left;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        color: #545454;
+    }
+    
+    .donation-wrapper__card p {
+        padding-bottom: 20px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        color: #545454;
+    }
+    
+    .number {
+        background-image: url(../img/card.svg);
+        background-repeat: no-repeat;
+        background-color: #F1CDB3;
+    }
+    
+    .number p {
+        padding-left: 45px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
