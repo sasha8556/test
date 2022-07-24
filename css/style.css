@@ -274,3 +274,45 @@
     .buttom:hover {
         background: #FDDCC4;
     }
+    
+    .help {
+        padding-top: 80px;
+        padding-bottom: 98px;
+    }
+    
+    .help h2 {
+        max-width: 308px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        color: #545454;
+    }
+    
+    .help-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .help-wrapper__link {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 55px;
+    }
+    
+    .help-wrapper__link img {
+        padding-bottom: 30px;
+    }
+    
+    .help-wrapper__link p {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        color: #545454;
+    }
