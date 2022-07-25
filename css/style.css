@@ -157,7 +157,7 @@
     aside {
         padding-top: 80px;
         background: #F6F6F6;
-        height: 877px;
+        padding-bottom: 100px;
     }
     
     .name {
@@ -318,6 +318,7 @@
     }
     
     .donation-wrapper {
+        height: 284px;
         display: flex;
         justify-content: space-between;
     }
@@ -329,6 +330,7 @@
     
     .donation-wrapper__card {
         width: 43%;
+        min-height: 43px;
     }
     
     .donation-wrapper__card h2 {
@@ -355,7 +357,7 @@
     }
     
     .number {
-        background-image: url(../img/card.svg);
+        background: url(../img/card.svg) no-repeat left center;
         background-repeat: no-repeat;
         background-color: #F1CDB3;
     }
@@ -364,4 +366,41 @@
         padding-left: 45px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    
+    footer {
+        background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+        padding-top: 40px;
+    }
+    
+    .footer-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .footer-wrapper>div {
+        width: 300px;
+    }
+    
+    footer .footer-wrapper {
+        align-items: flex-start;
+    }
+    
+    footer h2 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        color: #FFFFFF;
+        padding-top: 16px;
+        margin-bottom: 33px;
+    }
+    
+    footer p {
+        min-height: 46px;
+    }
+    
+    footer .email {
+        background: url(../img/email.svg) no-repeat left center;
     }
