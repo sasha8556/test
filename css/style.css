@@ -326,6 +326,7 @@
     .donation-wrapper__labrador {
         width: 56%;
         text-align: right;
+        padding-right: 30px;
     }
     
     .donation-wrapper__card {
@@ -353,19 +354,49 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 110%;
+        letter-spacing: 0.06em;
         color: #545454;
+    }
+    
+    .donation-wrapper__card .information {
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #B2B2B2;
     }
     
     .number {
         background: url(../img/card.svg) no-repeat left center;
         background-repeat: no-repeat;
         background-color: #F1CDB3;
+        border-radius: 9px;
+        max-width: 349px;
+        margin: 0;
     }
     
     .number p {
         padding-left: 45px;
         padding-top: 10px;
         padding-bottom: 10px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        color: #545454;
+        opacity: 0.1;
+    }
+    
+    .donation-wrapper__card p {
+        padding-top: 20px;
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* color: #B2B2B2; */
     }
     
     footer {
@@ -382,10 +413,6 @@
         width: 300px;
     }
     
-    footer .footer-wrapper {
-        align-items: flex-start;
-    }
-    
     footer h2 {
         font-family: 'Georgia';
         font-style: normal;
@@ -399,8 +426,25 @@
     
     footer p {
         min-height: 46px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        color: #F1CDB3;
     }
     
     footer .email {
         background: url(../img/email.svg) no-repeat left center;
+    }
+    
+    footer .tel {
+        background: url(../img/iphone.svg)no-repeat left center;
+    }
+    
+    footer .local {
+        background: url(../img/nav.svg) no-repeat left center;
+        padding-left: 42px;
+    }
+    
+    footer a {
+        color: #F1CDB3;
     }
