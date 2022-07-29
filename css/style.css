@@ -194,24 +194,21 @@
         border: 2px solid #F1CDB3;
         border-radius: 50%;
         padding: 23px 19px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         margin-top: 200px;
+        margin-right: 53px;
     }
     
     .middle-pets {
         display: flex;
         justify-content: space-between;
-        flex-grow: 1;
+        
     }
     
-    .middle-pets .cat:hover,
-    .puppy:hover,
-    .dog:hover {
+    .middle-pets>div:hover{
         background-color: #FFFFFF;
     }
     
     .middle-pets p {
-        font-family: 'Georgia';
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
@@ -222,7 +219,6 @@
     
     .middle-pets a {
         text-decoration: none;
-        font-family: 'Georgia';
         font-weight: 400;
         font-size: 17px;
         line-height: 130%;
@@ -237,23 +233,14 @@
     .middle-pets a:hover {
         background: #FDDCC4;
     }
-    
-    .puppy {
-        max-width: 270px;
-        margin-left: 90px;
-        margin-right: 90px;
-        background: #FAFAFA;
-    }
-    
-    .cat {
+    .middle-pets>div{
         max-width: 270px;
         height: 400px;
         background: #FAFAFA;
     }
-    
-    .dog {
-        max-width: 270px;
-        background: #FAFAFA;
+     .puppy {
+        margin-left: 90px;
+        margin-right: 90px;
     }
     
     .slides-wrapper__right button {
@@ -261,21 +248,13 @@
         border-radius: 50%;
         padding: 23px 19px;
         margin-top: 200px;
+        margin-left: 53px;
     }
     
     .slides-wrapper__left button:hover,
     .slides-wrapper__right button:hover {
         background: #FDDCC4;
     }
-    /* .buttom {
-        background: #F1CDB3;
-        border-radius: 100px;
-        width: 261px;
-        padding: 15px 45px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-top: 60px;
-    } */
-    
     .buttom a {
         text-decoration: none;
         font-weight: 400;
@@ -290,7 +269,7 @@
         margin-left: 36%;
     }
     
-    .buttom:hover {
+    .buttom a:hover {
         background: #FDDCC4;
     }
     
@@ -302,6 +281,7 @@
     .help h2 {
         max-width: 308px;
         margin-bottom: 5px;
+        margin-left: 35%;
         text-align: center;
         font-family: 'Georgia';
         font-weight: 400;
@@ -317,6 +297,9 @@
     }
     
     .help-wrapper__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-left: 60px;
         margin-right: 60px;
         margin-top: 55px;
@@ -364,7 +347,7 @@
     }
     
     .donation-wrapper__card p {
-        padding-bottom: 20px;
+       
         font-weight: 400;
         font-size: 15px;
         line-height: 110%;
@@ -382,33 +365,35 @@
     }
     
     .number {
+        display: inline-block;
         background: url(../img/card.svg) no-repeat left center;
-        background-repeat: no-repeat;
+        background-position: 15px;
         background-color: #F1CDB3;
         border-radius: 9px;
-        max-width: 349px;
-        margin: 0;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+       
     }
     
     .number p {
+        font-family: 'Georgia';
+        text-decoration: none;
         padding-left: 45px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
         color: #545454;
-        opacity: 0.1;
+        letter-spacing: 0.06em;
     }
     
-    .donation-wrapper__card p {
-        padding-top: 20px;
-        font-family: 'Arial';
-        font-style: italic;
+    .donation-wrapper__card h4 {
+        font-family: 'Georgia';
+        font-style: normal;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-        /* color: #B2B2B2; */
+        font-size: 15px;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 20px;
     }
     
     footer {
@@ -418,7 +403,7 @@
     
     .footer-wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     
     footer .footer-wrapper>div {
@@ -464,11 +449,12 @@
             max-width: 95%;
         }
     }
-    /* @media (max-width: 1140px){
+    @media (max-width: 1100px){
         .middle-pets .dog{
             display: none;
         }
         .middle-pets{
+            display: flex;
             justify-content: space-around;
         }
-    } */
+    }
