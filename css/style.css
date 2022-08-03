@@ -32,6 +32,7 @@
     
     .header-wrapper {
         display: flex;
+        align-items: center;
         flex-wrap: nowrap;
         justify-content: space-between;
         padding-top: 60px;
@@ -72,6 +73,7 @@
     .header-wrapper__about a {
         color: #FAFAFA;
         border-bottom: 3px solid #F1CDB3;
+        padding-bottom: 5px;
     }
     /* -------main--------- */
     
@@ -110,6 +112,7 @@
     }
     
     .main-wrapper__text a {
+        display: inline-block;
         padding: 15px 45px;
         background: #F1CDB3;
         width: 207px;
@@ -125,7 +128,8 @@
         background: #FDDCC4;
     }
     
-    .main-wrapper__dog {
+    .main-wrapper__dog img{
+        display: block;
         margin-top: 60px;
     }
     
@@ -151,7 +155,7 @@
     }
     
     .section-wrapper__shelter h2 {
-        width: 320px;
+        max-width: 320px;
         font-weight: 400;
         font-size: 35px;
         line-height: 130%;
@@ -159,7 +163,7 @@
     }
     
     .section-wrapper__shelter p {
-        width: 430px;
+        max-width: 430px;
         margin-top: 25px;
         font-family: 'Arial';
         font-weight: 400;
@@ -191,11 +195,15 @@
     }
     
     .slides-wrapper__left button {
+        width: 52px;
+        height: 52px;
         border: 2px solid #F1CDB3;
         border-radius: 50%;
-        padding: 23px 19px;
         margin-top: 200px;
         margin-right: 53px;
+    }
+    .slides-wrapper__middle{
+        flex-grow: 1;
     }
     
     .middle-pets {
@@ -218,11 +226,11 @@
     }
     
     .middle-pets a {
+        display: inline-block;
         text-decoration: none;
         font-weight: 400;
         font-size: 17px;
         line-height: 130%;
-        width: 97px;
         color: #292929;
         padding: 15px 45px;
         border: 2px solid #F1CDB3;
@@ -234,19 +242,19 @@
         background: #FDDCC4;
     }
     .middle-pets>div{
-        max-width: 270px;
-        height: 400px;
+        width: 270px;
         background: #FAFAFA;
     }
-     .puppy {
+     /* .puppy {
         margin-left: 90px;
-        margin-right: 90px;
-    }
+        margin-right: 90px; */
+    
     
     .slides-wrapper__right button {
+        width: 52px;
+        height: 52px;
         border: 2px solid #F1CDB3;
         border-radius: 50%;
-        padding: 23px 19px;
         margin-top: 200px;
         margin-left: 53px;
     }
@@ -255,7 +263,12 @@
     .slides-wrapper__right button:hover {
         background: #FDDCC4;
     }
-    .buttom a {
+    .button{
+        display:block;
+        text-align: center;
+    }
+    .button a{
+        
         text-decoration: none;
         font-weight: 400;
         font-size: 17px;
@@ -265,11 +278,10 @@
         border-radius: 100px;
         width: 261px;
         padding: 15px 45px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 36%;
+        
     }
     
-    .buttom a:hover {
+    .button a:hover {
         background: #FDDCC4;
     }
     
@@ -279,9 +291,10 @@
     }
     
     .help h2 {
+        
+        text-align: center;
         max-width: 308px;
-        margin-bottom: 5px;
-        margin-left: 35%;
+        margin:0 auto 5px;
         text-align: center;
         font-family: 'Georgia';
         font-weight: 400;
